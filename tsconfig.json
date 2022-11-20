@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "target": "es2022",
+    "allowJs": false,
+    "moduleResolution": "node",
+    "module": "es2022",
+    "skipLibCheck": true
+  }
+}
