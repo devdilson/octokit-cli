@@ -15,6 +15,7 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".js"],
   },
+  devtool: 'source-map',
   output: {
     filename: "cli.js",
     path: path.resolve(__dirname, "dist"),
