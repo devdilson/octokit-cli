@@ -1,4 +1,4 @@
-import { Octokit } from "octokit";
+import { Octokit } from 'octokit';
 
 interface Config {
   token: string;
@@ -6,7 +6,7 @@ interface Config {
 }
 
 class OctoGit {
-  public readonly ENDPOINT = "github.com";
+  public readonly ENDPOINT = 'github.com';
 
   private readonly octokit: Octokit;
 
@@ -26,7 +26,7 @@ class OctoGit {
         owner: input.owner,
         repo: input.repo,
         issue_number: input.issue_number,
-        body: "test",
+        body: 'test',
       });
     } catch (ex) {
       console.log(ex);
@@ -35,12 +35,12 @@ class OctoGit {
 }
 
 const kit = new OctoGit({
-  token: `Your token`,
+  token: 'Your token',
 });
 
 kit.addCommentOnPr({
-  repo: "repo",
-  owner: "name",
+  repo: 'repo',
+  owner: 'name',
   issue_number: 1,
-  comment: "test",
+  comment: 'test',
 });
